@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singup Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+    <form action="">
+        <h1>Create Account</h1>
+        <p id="top">Fill in the details below to get stated</p>
+        <label id="label" for="full_name">Full Name</label><br>
+        <input type="text" name="full_name" placeholder="John Doe" required id="full_name"><br>
+        <label id="label" for="email">Email</label><br>
+        <input type="email" name="email" placeholder="johndoe@xyz.com" required id="email"><br>
+        <label id="label" for="password">Password</label><br>
+        <input type="password" name="password" placeholder="At least 8 characters" minlength="8" required id="password"><br>
+        <label id="label" for="country">Country</label><br>
+        <select name="country" id="country" required>
+            <option value="">Choose your Country</option>
+            <option value="india">India</option>
+            <option value="america">America</option>
+            <option value="uk">U.K.</option>
+            <option value="china">China</option>
+            <option value="japan">Japan</option>
+        </select><br>
+        <label  id="label" for="gender">Gender</label><br>
+        <input type="radio" name="gender" checked id="male"> Male
+        <input type="radio" name="gender" id="female"> Female
+        <input type="radio" name="gender" id="others"> Others <br>
+        <label id="label" for="message">Message (optional)</label><br>
+        <textarea name="message" id="message" rows="5" cols="30"></textarea> <br>
+        <input type="checkbox" name="terms" id="terms" required>  I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a><br>
+        <input type="submit" value="Sing Up"><br>
+        <p id="top">Already have an account? <a href="#">Log in</a></p>
+    </form>
+    </main>
+</body>
+</html>

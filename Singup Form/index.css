@@ -1,0 +1,112 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    background-color: pink;
+    height: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    border: 2px dotted blue;
+    background-color: aquamarine;
+    border-radius: 12px;
+    width: 520px;
+    box-sizing: border-box;
+    padding-right: 45px;
+    padding-left: 25px;
+    box-shadow:  6px 6px rgba(205, 6, 6, 0.746);
+}
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 6px;
+    font-family: 1.2rem;
+}
+#top{
+    text-align: center;
+    font-weight: lighter;
+    color: #6B7280;
+    margin-bottom: 8px;
+}
+#label{
+    display: inline-block;
+    margin: 15px;
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: palevioletred;
+}
+
+input[type="text"]{
+    background-color: wheat;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+}
+input[type="password"]{
+    background-color: wheat;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+}
+input[type="email"]{
+    background-color: wheat;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 100%;
+    height: 40px;
+    padding: 12px;
+    font-size: 1rem;
+}
+select{
+    background-color: wheat;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;    
+}
+textarea{
+    background-color: wheat;
+    border-radius: 10px;
+    border-style: dashed;
+    width: 100%;
+    height: 80px;
+    font-size: 1rem;
+    padding: 12px;
+}
+input[type="checkbox"]{
+    accent-color: yellow;
+    transform: scale(1.5);
+}
+input[type="radio"]{
+    accent-color: yellow;
+    transform: scale(1.5);
+}
+input[type="submit"]{
+    width: 100%;
+    height: 60px;
+    background-color: brown;
+    border-radius: 22px;
+    margin: 12px;
+    align-items: center;
+}
+input[type="submit"]:hover{
+    background-color: blueviolet;
+    border-radius: 16px;
+}
+input:is([type="text"],[type="password"],[type="email"], [type="checkbox"],[type="radio"]):hover{
+    border-color: #6366f1;
+    box-shadow: 4px 4px rgba(14, 186, 34, 0.624);
+}
