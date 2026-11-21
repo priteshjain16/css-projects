@@ -177,3 +177,89 @@ footer p{
     font-size: 0.92rem;
     text-align: center;
 }
+@media (max-width:1200px) {
+.hero-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 68px 30px;
+    max-width: 1100px;
+    height: 400px;
+}   
+.hero-art{
+    max-width: 500px;
+    max-height: 220px;
+}
+.features-section{
+    max-width:1100px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px 30px;
+
+}
+.nav-logo{
+    width: auto;
+}
+.hero-art .cup{
+    width: 180px;
+    height: 180px;
+    font-size: 6.5rem;
+}
+
+}
+@media (max-width:600px) {
+.navbar{
+    padding: 18px 32px;
+    height: 52px;
+    width: 100%;
+}
+.nav-logo{
+    font-size: 1.2rem;
+    width: auto;
+}
+.nav-links a{
+    font-size: 0.8rem;
+    margin-left: 2px;
+}
+.hero-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 40px 22px;
+    max-width: 600px;
+    max-height: 600px;
+}
+.hero-art{
+    max-width: 600px;
+    max-width: 600px;
+}
+.hero-art .cup{
+    width: 130px;
+    height: 130px;
+    font-size: 4.5rem;
+}
+.features-section{
+    max-width:600px;
+    max-height: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 40px 22px;
+
+}
+.cards{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+}
+.card{
+    padding: 28px 22px;
+    max-width: 332px;
+    max-height: 210px;
+}
+}
