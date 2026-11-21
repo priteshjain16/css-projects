@@ -177,89 +177,143 @@ footer p{
     font-size: 0.92rem;
     text-align: center;
 }
-@media (max-width:1200px) {
-.hero-section{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ---------- 1) Small laptops / large tablets : ≤ 1200px ---------- */
+@media (max-width: 1200px) {
+  .hero-section,
+  .features-section {
     margin-left: auto;
     margin-right: auto;
-    padding: 68px 30px;
     max-width: 1100px;
-    height: 400px;
-}   
-.hero-art{
-    max-width: 500px;
-    max-height: 220px;
-}
-.features-section{
-    max-width:1100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .hero-section {
+    height: auto;           
+    min-height: 340px;
+    gap: 32px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .hero-text,
+  .hero-art {
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;           
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 50px 30px;
+  }
 
-}
-.nav-logo{
-    width: auto;
-}
-.hero-art .cup{
-    width: 180px;
-    height: 180px;
+  .hero-art .cup {
+    width: 190px;
+    height: 190px;
     font-size: 6.5rem;
+  }
+
+  .features-section {
+    height: auto;           
+  }
 }
 
-}
-@media (max-width:600px) {
-.navbar{
-    padding: 18px 32px;
-    height: 52px;
-    width: 100%;
-}
-.nav-logo{
-    font-size: 1.2rem;
-    width: auto;
-}
-.nav-links a{
-    font-size: 0.8rem;
-    margin-left: 2px;
-}
-.hero-section{
+/* ---------- 2) Tablets : ≤ 900px ---------- */
+@media (max-width: 900px) {
+
+  .navbar {
+    padding: 14px 20px;
+    height: auto;
+    min-height: 64px;
+    gap: 12px;
+  }
+
+  .nav-logo { width: auto; }  
+
+  .nav-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 14px;
+  }
+  .nav-links a { margin-left: 0; }
+  .hero-section {
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 40px 22px;
-    max-width: 600px;
-    max-height: 600px;
+    text-align: center;
+    padding: 40px 24px;
+    gap: 28px;
+  }
+
+  .hero-text,
+  .hero-art {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 560px;
+  }
+
+  .hero-text h1 { font-size: 1.9rem; }
+  .hero-text p  { max-width: 480px; margin-left: auto; margin-right: auto; }
+
+  .hero-art .cup {
+    width: 160px;
+    height: 160px;
+    font-size: 5.5rem;
+  }
+
+  .features-section { padding: 40px 24px; }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+
+  .card {
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+  .card:last-child { grid-column: 1 / -1; }  
+
+  footer {
+    height: auto;
+    min-height: 110px;
+    padding: 24px 20px;
+  }
 }
-.hero-art{
-    max-width: 600px;
-    max-width: 600px;
-}
-.hero-art .cup{
+
+/* ---------- 3) Phones : ≤ 600px ---------- */
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 12px 16px;
+    flex-wrap: wrap;
+    row-gap: 6px;
+  }
+  .nav-logo  { font-size: 1.25rem; }
+  .nav-links { gap: 10px; }
+  .nav-links a { font-size: 0.8rem; }
+
+  .hero-section { padding: 32px 16px; gap: 20px; }
+  .hero-text h1 { font-size: 1.55rem; line-height: 1.25; }
+  .hero-text p  { font-size: 0.95rem; margin-bottom: 1.4rem; }
+  .hero-text button {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero-art .cup {
     width: 130px;
     height: 130px;
     font-size: 4.5rem;
-}
-.features-section{
-    max-width:600px;
-    max-height: auto;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 40px 22px;
+  }
 
-}
-.cards{
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 18px;
-}
-.card{
-    padding: 28px 22px;
-    max-width: 332px;
-    max-height: 210px;
-}
+  .features-section { padding: 32px 16px; }
+  .features-section h2 { font-size: 1.35rem; }
+  .features-section p  { margin-bottom: 24px; }
+
+  .cards { grid-template-columns: 1fr; }   /* one card per row */
+  .card:last-child { grid-column: auto; }
+  .card { padding: 22px 18px; min-height: 0; }
+
+  footer { padding: 22px 16px; }
+  .social { flex-wrap: wrap; gap: 14px; }
+  footer p { font-size: 0.85rem; }
 }
