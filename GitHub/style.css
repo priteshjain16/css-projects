@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(33, 4, 4);
+}
+h1{
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 200px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+}
+.graph{
+    background-color: #ebedf0;
+    height: 160px;
+    width: 1460px;
+    border-radius: 12px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(53,1fr);
+}
+.cell{
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    margin: 2px;
+    border: .4px solid black;
+    transition: all 0.2s ease-in;
+}
+.value0{
+    background-color: pink;
+}
+.value1{
+    background-color: #9be9a8;
+}
+.value2{
+    background-color: #40c463;
+}
+.value3{
+    background-color: #30a14e;
+}
+.value4{
+    background-color: #216e39;
+}
+.cell:hover{
+    transform: scale(1.8);
+}
