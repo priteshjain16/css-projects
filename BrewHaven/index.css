@@ -236,7 +236,7 @@ main{
 }
 @media (max-width:330px) {
 main{
-    height: 1850px;
+    height: 1750px;
 }
 .features-section{
     height: auto;
